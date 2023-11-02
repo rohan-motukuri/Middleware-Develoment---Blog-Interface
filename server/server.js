@@ -33,10 +33,13 @@ function globalMiddleware (req, res, next) {
 
 function auth (req, res, next) {
     console.log("@ auth");
-    if(req.headers != "") {
+    if(req.headers['x-auth-token'] == process.env.secret) {
         next();
     }
-    else res.send("Non Authenticated");
+    else res.send({
+        sucesss: false,
+        body: "Non Authorized"
+    });
 }
 
 app.listen(port, () => {
