@@ -1,8 +1,7 @@
-const express = require("express");
-const router = express.Router();
+const statsRoute = (req, res) => {
+    console.log("@ blog-stats route")
 
-router.get("/", (req, res) => {
+    console.log(res.locals.finalResponse);
+};
 
-});
-
-module.exports = router;
+module.exports = statsRoute;

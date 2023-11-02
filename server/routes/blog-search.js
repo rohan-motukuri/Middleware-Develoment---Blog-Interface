@@ -1,8 +1,6 @@
-const express = require("express");
-const router = express.Router();
+const statsRoute = (req, res) => {
+    console.log("@ blog-search route")
+    res.send("Testing");
+};
 
-router.get("/", (req, res) => {
-
-});
-
-module.exports = router;
+module.exports = statsRoute;
