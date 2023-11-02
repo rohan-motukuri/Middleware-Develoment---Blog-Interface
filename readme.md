@@ -1,12 +1,12 @@
 ## Blog Stats and Search Functionality
 
--[x] Implement analysis of blogs based on the following parameters, using Lodash:
+- [x] Implement analysis of blogs based on the following parameters, using Lodash:
 	- Longest title
 	- Unique title lists
 	- Number of posts
-	-Number of posts with search string 'privacy'
--[x] Implement search feature when searching using the query: `?query=` followed by the search string.
--[ ] (Optionally) Implement caching mechanism.
+	- Number of posts with search string 'privacy'
+- [x] Implement search feature when searching using the query: `?query=` followed by the search string.
+- [ ] (Optionally) Implement caching mechanism.
 
 ## Endpoints
 
